@@ -1,18 +1,16 @@
-name: Activity Box
+name: GitHub - Activity - Readme
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - uses: JasonEtco/activity-box@master
+      - uses: actions/checkout@v2
+      - uses: jamesgeorge007/github-activity-readme@master
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_USERNAME: JasonEtco
-          GIST_ID: 123abc
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
