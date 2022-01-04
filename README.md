@@ -47,8 +47,11 @@
 
 </details>
 
+
+
 <details>
   <summary>:zap: GitHub Stats</summary>
-[![avivpolak's GitHub stats](https://github-readme-stats.vercel.app/api?username=avivpolak)](s)
+
+  <img align="left" alt="avivpolak's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=avivpolak" />
 
 </details>
